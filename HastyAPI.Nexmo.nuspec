@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>Nexmo API</title>
+    <authors>Luke Sampson</authors>
+    <owners>Luke Sampson</owners>
+    <licenseUrl>https://github.com/lukesampson/HastyAPI.Nexmo/blob/master/license</licenseUrl>
+    <projectUrl>https://github.com/lukesampson/HastyAPI.Nexmo</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Send SMS messages with the Nexmo API.</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Copyright 2012</copyright>
+    <tags>sms web api</tags>
+  </metadata>
+</package>
