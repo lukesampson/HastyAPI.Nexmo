@@ -31,9 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HastyAPI, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="HastyAPI, Version=1.0.6.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>packages\HastyAPI.1.0.4.0\lib\net40\HastyAPI.dll</HintPath>
+      <HintPath>packages\HastyAPI.1.0.6.0\lib\net40\HastyAPI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -42,18 +42,25 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="xunit">
+      <HintPath>..\..\..\..\..\..\..\Program Files\xUnit\xunit.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="International.cs" />
     <Compile Include="Message.cs" />
     <Compile Include="Nexmo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResponseCode.cs" />
     <Compile Include="SubmissionResponse.cs" />
+    <Compile Include="Tests\InternationalFacts.cs" />
     <Compile Include="Tests\SendMessageFacts.cs" />
     <Compile Include="Tests\Shared.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="HastyAPI.Nexmo.nuspec" />
+    <None Include="HastyAPI.Nexmo.nuspec">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="license" />
     <None Include="packages.config" />
     <None Include="readme.md" />
