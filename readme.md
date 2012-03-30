@@ -1,18 +1,22 @@
-﻿Overview
-========
+﻿Nexmo API for .NET
+==================
 
-A .NET library for accessing the [Nexmo](http://www.nexmo.com) API.
+A .NET library for accessing the [Nexmo](http://www.nexmo.com) API. The API docs are [here](http://nexmo.com/documentation/).
 
 To use it
 =========
 
-var response = new Nexmo(key, secret).Send(from, to, text);
+First you need to [sign up](http://dashboard.nexmo.com/register) and get your API key and secret.
+
+Then:
+
+    var response = new Nexmo(key, secret).Send(from, to, text);
 
 
 International numbers
 ---------------------
 
-Nexmo requires numbers in international format. If you have numbers in local format, you can use the International.Convert(number, [region]) methods to help with this.
+Nexmo requires numbers in international format. If you have numbers in local format, you can use the `International.Convert(number, [region])` methods to help with this.
 
 US and Canadian numbers shouldn't need conversion.
 
